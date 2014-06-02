@@ -1,6 +1,6 @@
 # Dateseq
 
-TODO: Write a gem description
+Generate date sequence like seq command
 
 ## Installation
 
@@ -18,7 +18,19 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+    $ dateseq [OPTIONS] FROM_DATE TO_DATE
+
+    $ dateseq 20140602 20140605
+    20140602
+    20140603
+    20140604
+    20140605
+
+    Options:
+        -f, --format FORMAT  Set date format (default is '%Y%m%d')
+        -s, --separator SEP  Set separator charactor (default is '\n')
+        -h, --help           Show this message
+        -v, --version        Show version
 
 ## Contributing
 

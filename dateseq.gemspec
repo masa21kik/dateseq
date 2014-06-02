@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Dateseq::VERSION
   spec.authors       = ["masa21kik"]
   spec.email         = ["masa21kik@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{Generate date sequence like seq command}
+  spec.description   = %q{Generate date sequence like seq command}
   spec.homepage      = ""
   spec.license       = "MIT"
 
