@@ -7,16 +7,19 @@ module Dateseq
   class Generator
     def initialize(options)
       @format = options[:format] || '%Y%m%d'
+      @sep = options[:sep] || "\n"
     end
 
     def sequence(from_date, to_date)
-      from = Date.strptime(from_date, @format)
-      to = Date.strptime(to_date, @format)
-      seq = []
-      from.upto(to).each do |date|
-        seq << date.strftime(@format)
+      from = Date.parse(from_date)
+      to = Date.parse(to_date)
+      from.upto(to).map do |date|
+        date.strftime(@format)
       end
-      seq
+    end
+
+    def sequence_str(from_date, to_date)
+      sequence(from_date, to_date).join(@sep)
     end
   end
 end
