@@ -13,7 +13,11 @@ opt.on('-f', '--format FORMAT',
 end
 opt.on('-s', '--separator SEP',
        'Set separator charactor (default is \'\n\')') do |v|
-  options[:sep] = v
+  options[:sep] = case v
+                  when '\t' then "\t"
+                  when '\n' then "\n"
+                  else v
+                  end
 end
 opt.on('-h', '--help', 'Show this message') do
   abort(opt.help)
