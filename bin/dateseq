@@ -19,9 +19,9 @@ opt.on('-s', '--separator SEP',
                   else v
                   end
 end
-opt.on('-p', '--step NUM',
-       'Set date step (default is 1)') do |v|
-  options[:step] = v.to_i
+opt.on('-i', '--increments NUM',
+       'Set date increment steps (default is 1)') do |v|
+  options[:increments] = v.to_i
 end
 opt.on('-h', '--help', 'Show this message') do
   abort(opt.help)

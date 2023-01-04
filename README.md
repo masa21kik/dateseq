@@ -29,6 +29,7 @@ Or install it yourself as:
     Options:
         -f, --format FORMAT  Set date format (default is '%Y%m%d')
         -s, --separator SEP  Set separator charactor (default is '\n')
+        -i, --increments NUM Set date increment steps (default is 1)
         -h, --help           Show this message
         -v, --version        Show version
 
