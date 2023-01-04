@@ -23,6 +23,9 @@ opt.on('-i', '--increments NUM',
        'Set date increment steps (default is 1)') do |v|
   options[:increments] = v.to_i
 end
+opt.on('-m', '--monthly', 'Set to monthly mode') do
+  options[:mode] = :monthly
+end
 opt.on('-h', '--help', 'Show this message') do
   abort(opt.help)
 end
