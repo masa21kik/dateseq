@@ -30,11 +30,11 @@ describe Dateseq::Generator do
       it_behaves_like 'generate date sequence'
     end
 
-    context '2013-12-30 to 2014-01-01' do
+    context '2013-12-30 to 2014-01-21 with increments 7' do
       let(:from) { '2013-12-30' }
-      let(:to) { '2014-01-01' }
-      let(:options) { { format: '%Y-%m-%d' } }
-      let(:expected) { %w(2013-12-30 2013-12-31 2014-01-01) }
+      let(:to) { '2014-01-21' }
+      let(:options) { { format: '%Y-%m-%d', increments: 7 } }
+      let(:expected) { %w(2013-12-30 2014-01-06 2014-01-13 2014-01-20) }
       it_behaves_like 'generate date sequence'
     end
   end
