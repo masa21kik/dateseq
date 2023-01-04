@@ -8,12 +8,13 @@ module Dateseq
     def initialize(options)
       @format = options[:format] || '%Y%m%d'
       @sep = options[:sep] || "\n"
+      @step = options[:step] || 1
     end
 
     def sequence(from_date, to_date)
       from = Date.parse(from_date)
       to = Date.parse(to_date)
-      from.upto(to).map do |date|
+      from.step(to, @step).map do |date|
         date.strftime(@format)
       end
     end
