@@ -1,5 +1,10 @@
 # Dateseq
 
+[![Gem Version](https://badge.fury.io/rb/dateseq.svg)](https://badge.fury.io/rb/dateseq)
+[![Build Status](https://github.com/masa21kik/dateseq/workflows/test/badge.svg?branch=master)](https://github.com/masa21kik/dateseq/actions?query=workflow%3Atest)
+[![Maintainability](https://api.codeclimate.com/v1/badges/3127d2fbb669ab278d24/maintainability)](https://codeclimate.com/github/masa21kik/dateseq/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/3127d2fbb669ab278d24/test_coverage)](https://codeclimate.com/github/masa21kik/dateseq/test_coverage)
+
 Generate date sequence like seq command
 
 ## Installation
